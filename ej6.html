@@ -25,21 +25,24 @@
         let cadena = prompt(`Introduce una frase`);
 
         let arrayDeCadenas = cadena.split(" ");
-        let cadenasDeArray = []
+        let nuevoArray = []
         let cadenaReverse = "";
 
         for (let i = arrayDeCadenas.length-1; i >= 0; i--) {
             const element = arrayDeCadenas[i];
-            cadenasDeArray.push(element);
+            nuevoArray.push(element);
             cadenaReverse += element + " "
         }
 
         document.write(`La frase tiene una longitud de ${cadena.length} caracteres.`);
         document.write("<br>")
+        document.write("Minúsculas: ")
         document.write(cadena.toLocaleLowerCase());
         document.write("<br>")
+        document.write("Mayúsculas: ")
         document.write(cadena.toUpperCase());
         document.write("<br>")
+        document.write("Al revés: ")
         document.write(cadenaReverse);
 
         // Fuente: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/split
