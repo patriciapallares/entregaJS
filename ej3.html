@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Introducir un mes y decir a que estación pertenece:
+        // Ej: Dime un mes: enero
+        // Estamos en Invierno
+        // (Nota: No hace falta ninguna comprobación. Los meses diciembre, enero, febrero serán
+        // invierno, marzo, abril y mayo serán primavera, junio, julio y agosto serán verano y
+        // septiembre, octubre y noviembre será otoño
+
+        var mes = prompt(`Dime un mes: `).toLocaleLowerCase();
+
+        switch (mes) {
+            case "enero":
+                console.log("Estamos en Invierno");
+                break;
+
+            case "febrero":
+                console.log("Estamos en Invierno");
+                break;
+
+            case "marzo":
+                console.log("Estamos en primavera");
+                break;
+
+            case "abril":
+                console.log("Estamos en primavera");
+                break;
+
+            case "mayo":
+                console.log("Estamos en primavera");
+                break;
+
+            case "junio":
+                console.log("Estamos en verano");
+                break;
+
+            case "julio":
+                console.log("Estamos en verano");
+                break;
+
+            case "agosto":
+                console.log("Estamos en verano");
+                break;
+
+            case "septiembre":
+                console.log("Estamos en otoño");
+                break;
+
+            case "octubre":
+                console.log("Estamos en otoño");
+                break;
+
+            case "noviembre":
+                console.log("Estamos en otoño");
+                break;
+
+            case "diciembre":
+                console.log("Estamos en Invierno");
+                break;
+
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>

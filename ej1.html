@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Introducir 5 números. Calcular la suma de todos ellos. Decir cuántos de ellos son
+        // mayores de 100
+
+        var suma = 0;
+        var mayoresDe100 = 0;
+
+        for (var i = 1; i <= 5; i++) {
+
+            var numero = prompt("Introduce un número: ");
+            suma += parseInt(numero);
+
+            if (numero > 100) {
+                mayoresDe100++;
+            }
+        }
+
+        console.log("La suma es: " + suma); 
+        console.log("Hay " + mayoresDe100 + " números mayores de 100.");
+
+
+    </script>
+</body>
+</html>
