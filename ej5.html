@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 5. Introducir el precio de un artículo. Calcular el iva y el precio total (con el iva incluido)
+        // que debe salir redondeado a dos decimales.
+
+        const iva = 21;
+
+        let precioInicial = parseInt(prompt("Introduce el precio sin iva:"));
+
+        let ivaCalculado = precioInicial * (iva/100);
+
+        let precioTotal = precioInicial + ivaCalculado
+
+        console.log(`El precio total es: ${precioTotal.toFixed(2)}€`);
+
+
+        // Fuente: https://tecnonucleous.com/2018/03/24/como-limitar-los-numeros-decimales-es-javascript/
+
+    </script>
+</body>
+
+</html>
