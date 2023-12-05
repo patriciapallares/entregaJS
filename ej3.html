@@ -16,35 +16,35 @@
         // invierno, marzo, abril y mayo serán primavera, junio, julio y agosto serán verano y
         // septiembre, octubre y noviembre será otoño
 
-        var mes = prompt(`Dime un mes: `).toLocaleLowerCase();
+        let mes = prompt(`Dime un mes: `).toLocaleLowerCase();
 
         switch (mes) {
             case "diciembre":
             case "enero":
             case "febrero":
-                console.log("Estamos en invierno");
+               document.write("Estamos en invierno");
                 break;
 
             case "marzo":
             case "abril":
             case "mayo":
-                console.log("Estamos en primavera");
+               document.write("Estamos en primavera");
                 break;
 
             case "junio":
             case "julio":
             case "agosto":
-                console.log("Estamos en verano");
+               document.write("Estamos en verano");
                 break;
 
             case "septiembre":
             case "octubre":
             case "noviembre":
-                console.log("Estamos en otoño");
+               document.write("Estamos en otoño");
                 break;
 
             default:
-                console.log("No has introducido un mes");
+               document.write("No has introducido un mes");
                 break;
         }
     </script>
